@@ -1,3 +1,3 @@
 #!/bin/bash -eu
 
-docker build --no-cache -t tux . && docker run -it tux
+DOCKER_BUILDKIT=1 docker build --no-cache -t tux . && docker run -it tux
